@@ -21,4 +21,27 @@ To get Clips up and running on your local machine, follow these straightforward 
 1. **Clone the Repository:**
 
    git clone https://github.com/yourusername/clips.git
+Install Dependencies:
+Ensure you have Node.js installed, and then install the project dependencies:
 
+## Configure Firebase:
+Set up your Firebase configuration in the environment.ts file to ensure the backend services are correctly linked:
+
+export const environment = {
+  production: false,
+  firebaseConfig: {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
+  }
+};
+
+## Start the Development Server:
+Use Angular CLI to launch the development server:
+
+ng serve
+
+## Then visit http://localhost:4200/ to view the app.
