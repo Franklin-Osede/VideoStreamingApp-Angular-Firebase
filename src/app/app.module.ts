@@ -6,15 +6,13 @@ import { AppComponent } from "./app.component";
 import { UserModule } from "./user/user.module";
 
 @NgModule({
-    declarations: [
-        AppComponent
-    ],
+  
     imports: [
         BrowserModule,
         AppRoutingModule,
         UserModule
     ],
     providers: [],
-    bootstrap: [AppComponent]
+    bootstrap: []
 })
 export class AppModule {}
